@@ -1,0 +1,94 @@
+.contact {
+  margin-top: 5px;
+  background: var(--ink);
+  color: #fff;
+  text-align: center;
+}
+
+.contact-inner {
+  padding: 106px 20px 110px;
+}
+
+.contact .eyebrow {
+  color: #afb7c3;
+}
+
+.sparkle {
+  display: block;
+  margin: 24px auto 0;
+  color: #9d91f0;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.contact h2 {
+  max-width: 690px;
+  margin: 19px auto 0;
+  font-size: clamp(33px, 4.1vw, 55px);
+  line-height: 1.12;
+  letter-spacing: -0.055em;
+}
+
+.contact p {
+  max-width: 650px;
+  margin: 17px auto 0;
+  color: #c0c7d1;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.contact .contact-invitation {
+  margin: 12px auto 28px;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.contact-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contact-actions .contact-email {
+  border-bottom: 1px solid #858d9a;
+}
+
+.contact-actions > span {
+  color: #c0c7d1;
+}
+
+.contact-actions a:hover {
+  color: #c0c7d1;
+}
+
+@media (max-width: 760px) {
+  .contact-actions {
+    gap: 10px;
+  }
+
+  .contact-actions a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .contact-actions > span {
+    display: none;
+  }
+}

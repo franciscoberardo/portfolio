@@ -1,0 +1,158 @@
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  align-items: center;
+  gap: 48px;
+  min-height: 430px;
+  padding: 72px 0 64px;
+}
+
+.hero-content {
+  min-width: 0;
+}
+
+.intro-label {
+  margin: 0 0 14px;
+  color: #6654c6;
+  font: 500 15px var(--font-mono);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(42px, 5.1vw, 68px);
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+}
+
+.hero-specialty {
+  margin: 14px 0 0;
+  color: #3d4552;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.hero-copy {
+  max-width: 550px;
+  margin: 20px 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-availability {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 26px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.hero-availability i {
+  flex: 0 0 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #38835d;
+}
+
+.terminal {
+  justify-self: end;
+  width: 100%;
+  min-width: 0;
+  max-width: 440px;
+  overflow: hidden;
+  border: 1px solid #343434;
+  border-radius: 14px;
+  background: #080808;
+  box-shadow: 0 8px 24px #00000014;
+}
+
+.terminal-bar {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  height: 38px;
+  padding: 0 20px;
+  border-bottom: 1px solid #242424;
+  background: #1b1b1b;
+}
+
+.terminal-bar i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ee7771;
+}
+
+.terminal-bar i:nth-child(2) {
+  background: #e9bd67;
+}
+
+.terminal-bar i:nth-child(3) {
+  background: #6fc398;
+}
+
+.terminal pre {
+  margin: 0;
+  padding: 32px;
+  color: #e3e3e3;
+  font: 14px / 1.8 var(--font-mono);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.terminal code {
+  font: inherit;
+}
+
+.code-key {
+  color: #ad9aff;
+}
+
+.code-string {
+  color: #70d0b2;
+}
+
+.cursor {
+  color: #aa92ff;
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 28px;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero {
+    display: block;
+    min-height: auto;
+    padding: 48px 0 52px;
+  }
+
+  .hero h1 {
+    font-size: clamp(36px, 9vw, 48px);
+  }
+
+  .hero-actions > a {
+    min-width: 0;
+  }
+
+  .terminal {
+    max-width: none;
+    margin-top: 32px;
+  }
+}
